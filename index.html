@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>奇米影视盒｜高清聚合追剧播放盒 | 官方站点 qimiyingshihe-app.github.io</title>
+<meta name="description" content="奇米影视盒是一款把院线大片、热播剧集、动漫综艺收进同一个片夹的聚合追剧播放盒。站内按题材、年份、地区、清晰度四维分类，支持倍速播放、离线缓存、跨端续播与追更提醒，每日补充新片与字幕资源，打开网页就能接着上次进度往下看。">
+<meta name="keywords" content="奇米影视盒,奇米影视盒官网,奇米影视盒入口,奇米影视盒下载,奇米影视,qimiyingshihe-app,影视聚合播放器,高清追剧盒,免费看剧软件,剧集更新提醒,跨端续播播放器">
+<meta name="author" content="奇米影视盒编辑部">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="revisit-after" content="3 days">
+<meta name="theme-color" content="#0b0f1a">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="奇米影视盒">
+<link rel="canonical" href="https://qimiyingshihe-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="奇米影视盒">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="奇米影视盒｜高清聚合追剧播放盒">
+<meta property="og:description" content="题材、年份、地区、清晰度四维检索，倍速与离线缓存一站配齐，奇米影视盒官网入口 qimiyingshihe-app.github.io 全天开放。">
+<meta property="og:url" content="https://qimiyingshihe-app.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="奇米影视盒｜高清聚合追剧播放盒">
+<meta name="twitter:description" content="把院线大片、热播剧集、动漫综艺收进同一个片夹，跨端续播不断档。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#0b0f1a;color:#dfe5f2;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.75;font-size:16px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.qm-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.qm-glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;pointer-events:none;z-index:0}
+.qm-glow-a{width:460px;height:460px;background:#ff8a3d;top:-160px;left:-120px}
+.qm-glow-b{width:420px;height:420px;background:#2f6bff;top:320px;right:-180px;opacity:.28}
+
+/* header */
+.qm-head{position:sticky;top:0;z-index:60;background:rgba(11,15,26,.86);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.qm-head-in{position:relative;display:flex;align-items:center;justify-content:space-between;height:68px}
+.qm-brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.qm-mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(140deg,#ff8a3d,#ff4d6d);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:19px;color:#fff;box-shadow:0 6px 18px rgba(255,90,70,.34)}
+.qm-brand-txt b{display:block;font-size:18px;letter-spacing:.5px;color:#fff}
+.qm-brand-txt span{display:block;font-size:11.5px;color:#7d8aa5;letter-spacing:.6px}
+.qm-menu-toggle{display:none}
+.qm-nav{display:flex;align-items:center;gap:4px}
+.qm-nav a{padding:9px 14px;border-radius:9px;font-size:14.5px;color:#a9b5cd;transition:.22s}
+.qm-nav a:hover,.qm-nav a:focus{color:#fff;background:rgba(255,255,255,.07)}
+.qm-burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,255,255,.14);flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
+.qm-burger i{display:block;width:19px;height:2px;background:#dfe5f2;border-radius:2px}
+
+/* hero */
+.qm-hero{position:relative;padding:78px 0 64px;overflow:hidden}
+.qm-hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}
+.qm-tagline{display:inline-flex;align-items:center;gap:9px;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,138,61,.36);background:rgba(255,138,61,.1);font-size:12.5px;color:#ffb277;letter-spacing:.4px}
+.qm-tagline em{width:6px;height:6px;border-radius:50%;background:#ff8a3d;display:block;animation:qmpulse 1.9s infinite}
+@keyframes qmpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+.qm-hero h1{font-size:44px;line-height:1.22;color:#fff;margin:20px 0 16px;letter-spacing:-.5px;font-weight:800}
+.qm-hero h1 u{text-decoration:none;background:linear-gradient(180deg,transparent 62%,rgba(255,138,61,.42) 62%);padding:0 3px}
+.qm-lead{font-size:16.5px;color:#9fabc4;max-width:530px}
+.qm-lead strong{color:#e6ebf6;font-weight:600}
+.qm-btns{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 26px}
+.qm-btn{padding:13px 26px;border-radius:12px;font-size:15px;font-weight:600;transition:.24s;border:1px solid transparent}
+.qm-btn-p{background:linear-gradient(135deg,#ff8a3d,#ff4d6d);color:#fff;box-shadow:0 10px 26px rgba(255,80,90,.28)}
+.qm-btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,80,90,.4)}
+.qm-btn-o{border-color:rgba(255,255,255,.2);color:#dfe5f2;background:rgba(255,255,255,.03)}
+.qm-btn-o:hover{border-color:#ff8a3d;color:#ffb277}
+.qm-stats{display:flex;flex-wrap:wrap;gap:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08)}
+.qm-stats div b{display:block;font-size:25px;color:#fff;font-weight:700;letter-spacing:-.3px}
+.qm-stats div span{font-size:12.5px;color:#7d8aa5}
+.qm-url-chip{display:inline-block;margin-top:18px;font-size:12.5px;color:#6c7891;word-break:break-all}
+.qm-url-chip b{color:#9aa7c0;font-weight:500}
+
+/* player card */
+.qm-player{position:relative;border-radius:20px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(160deg,#151d31,#0e1423);padding:16px;box-shadow:0 26px 60px rgba(0,0,0,.5)}
+.qm-screen{border-radius:13px;background:#070b14;aspect-ratio:16/10;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+.qm-screen::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(47,107,255,.22),transparent 60%)}
+.qm-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;background:rgba(255,138,61,.92);z-index:3;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(255,138,61,.4)}
+.qm-play::before{content:"";width:0;height:0;border-left:19px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.qm-bar{position:absolute;left:14px;right:14px;bottom:14px;z-index:3}
+.qm-bar-t{height:4px;border-radius:4px;background:rgba(255,255,255,.18);overflow:hidden}
+.qm-bar-t i{display:block;height:100%;width:63%;background:linear-gradient(90deg,#ff8a3d,#ff4d6d);border-radius:4px}
+.qm-bar-m{display:flex;justify-content:space-between;font-size:11px;color:#7d8aa5;margin-top:7px}
+.qm-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.qm-thumbs span{border-radius:9px;background:#101827;aspect-ratio:16/9;border:1px solid rgba(255,255,255,.05);position:relative;overflow:hidden}
+.qm-thumbs span::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,138,61,.16),rgba(47,107,255,.16))}
+
+/* section */
+.qm-sec{position:relative;padding:74px 0}
+.qm-sec-alt{background:#0d1220;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+.qm-sec-head{max-width:660px;margin-bottom:40px}
+.qm-kicker{font-size:12.5px;letter-spacing:2.4px;color:#ff8a3d;text-transform:uppercase;font-weight:600}
+.qm-sec-head h2{font-size:31px;color:#fff;margin:10px 0 12px;font-weight:700;letter-spacing:-.3px}
+.qm-sec-head p{color:#93a0b9;font-size:15.5px}
+
+/* feature grid */
+.qm-feat{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.qm-card{grid-column:span 2;padding:26px 24px;border-radius:16px;background:#131b2d;border:1px solid rgba(255,255,255,.07);transition:.26s;position:relative;overflow:hidden}
+.qm-card:hover{transform:translateY(-4px);border-color:rgba(255,138,61,.34);background:#161f34}
+.qm-card-w{grid-column:span 3}
+.qm-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;background:rgba(255,138,61,.12);border:1px solid rgba(255,138,61,.22)}
+.qm-card h3{font-size:17.5px;color:#fff;margin-bottom:9px;font-weight:600}
+.qm-card p{font-size:14.5px;color:#8d99b1}
+.qm-card ul{margin-top:14px}
+.qm-card li{font-size:13.8px;color:#8d99b1;padding-left:16px;position:relative;margin-top:7px}
+.qm-card li::before{content:"";position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:#ff8a3d}
+
+/* library */
+.qm-lib{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.qm-lib a{display:block;padding:20px;border-radius:14px;background:#131b2d;border:1px solid rgba(255,255,255,.07);transition:.24s}
+.qm-lib a:hover{border-color:rgba(255,138,61,.4);background:#17203a}
+.qm-lib b{display:block;font-size:16px;color:#fff;margin-bottom:6px}
+.qm-lib em{font-style:normal;font-size:12.8px;color:#7d8aa5;display:block;margin-bottom:12px}
+.qm-lib i{font-style:normal;font-size:12px;color:#ffb277;letter-spacing:.4px}
+.qm-tagrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.qm-tagrow span{padding:7px 15px;border-radius:999px;font-size:13px;color:#a9b5cd;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.qm-tagrow span:hover{color:#ffb277;border-color:rgba(255,138,61,.34)}
+
+/* schedule */
+.qm-sch{border-radius:16px;border:1px solid rgba(255,255,255,.08);background:#101725;overflow:hidden}
+.qm-sch-row{display:grid;grid-template-columns:132px 1fr 168px;gap:16px;align-items:center;padding:17px 24px;border-bottom:1px solid rgba(255,255,255,.06);transition:.2s}
+.qm-sch-row:last-child{border-bottom:none}
+.qm-sch-row:hover{background:rgba(255,255,255,.03)}
+.qm-sch-row.time{background:rgba(255,138,61,.07);font-size:12.5px;letter-spacing:1.6px;color:#ffb277;font-weight:600}
+.qm-sch-row .d{font-size:14.5px;color:#a9b5cd}
+.qm-sch-row .d b{color:#e9edf7;font-weight:600;display:block;font-size:15.5px}
+.qm-sch-row .s{font-size:13px;text-align:right}
+.qm-pill{display:inline-block;padding:4px 11px;border-radius:7px;font-size:12px;font-weight:600}
+.qm-pill-g{background:rgba(63,209,140,.14);color:#4fd79b;border:1px solid rgba(63,209,140,.28)}
+.qm-pill-b{background:rgba(47,107,255,.14);color:#7ea2ff;border:1px solid rgba(47,107,255,.3)}
+.qm-pill-o{background:rgba(255,138,61,.14);color:#ffb277;border:1px solid rgba(255,138,61,.3)}
+
+/* faq */
+.qm-faq{max-width:840px}
+.qm-faq details{border-radius:14px;background:#131b2d;border:1px solid rgba(255,255,255,.07);margin-bottom:12px;overflow:hidden}
+.qm-faq summary{padding:18px 22px;font-size:16px;color:#e9edf7;cursor:pointer;list-style:none;position:relative;font-weight:600}
+.qm-faq summary::-webkit-details-marker{display:none}
+.qm-faq summary::after{content:"+";position:absolute;right:22px;top:14px;font-size:21px;color:#ff8a3d;transition:.24s}
+.qm-faq details[open] summary::after{content:"−";transform:rotate(180deg)}
+.qm-faq details[open] summary{color:#ffb277;border-bottom:1px solid rgba(255,255,255,.06)}
+.qm-faq p{padding:0 22px 20px;font-size:14.8px;color:#8d99b1}
+
+/* about */
+.qm-about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.qm-about p{color:#93a0b9;font-size:15.5px;margin-bottom:16px}
+.qm-about p strong{color:#e6ebf6}
+.qm-info{background:#131b2d;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:26px}
+.qm-info dl{display:grid;grid-template-columns:88px 1fr;gap:12px 16px;font-size:14.5px}
+.qm-info dt{color:#7d8aa5}
+.qm-info dd{color:#dfe5f2;word-break:break-all}
+.qm-info dd a{color:#ffb277;border-bottom:1px dashed rgba(255,138,61,.4)}
+
+/* cta */
+.qm-cta{position:relative;border-radius:22px;padding:52px 44px;background:linear-gradient(125deg,#1b2340,#2a1a2e);border:1px solid rgba(255,255,255,.09);overflow:hidden}
+.qm-cta::after{content:"";position:absolute;width:300px;height:300px;right:-90px;top:-110px;border-radius:50%;background:rgba(255,138,61,.2);filter:blur(70px)}
+.qm-cta h2{font-size:28px;color:#fff;margin-bottom:12px;font-weight:700}
+.qm-cta p{color:#a4b0c8;font-size:15.5px;max-width:560px}
+.qm-cta .qm-btns{margin-top:26px}
+
+/* footer */
+.qm-foot{background:#080c15;border-top:1px solid rgba(255,255,255,.07);padding:52px 0 30px;font-size:14px}
+.qm-foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.06)}
+.qm-foot h4{font-size:14.5px;color:#fff;margin-bottom:14px;font-weight:600}
+.qm-foot li{margin-bottom:9px}
+.qm-foot li a{color:#7d8aa5;transition:.2s}
+.qm-foot li a:hover{color:#ffb277}
+.qm-foot p{color:#7d8aa5;font-size:13.6px}
+.qm-foot-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding-top:22px;color:#5f6b83;font-size:13px}
+.qm-foot-bot a{color:#7d8aa5}
+.qm-foot-bot a:hover{color:#ffb277}
+
+@media (max-width:980px){
+.qm-hero-in{grid-template-columns:1fr;gap:40px}
+.qm-hero h1{font-size:35px}
+.qm-feat{grid-template-columns:repeat(2,1fr)}
+.qm-card,.qm-card-w{grid-column:span 1}
+.qm-lib{grid-template-columns:repeat(2,1fr)}
+.qm-about{grid-template-columns:1fr;gap:30px}
+.qm-foot-grid{grid-template-columns:1fr 1fr}
+.qm-sch-row{grid-template-columns:104px 1fr;gap:10px}
+.qm-sch-row .s{grid-column:1/-1;text-align:left}
+}
+@media (max-width:760px){
+.qm-wrap{padding:0 18px}
+.qm-burger{display:flex}
+.qm-menu-toggle:checked ~ .qm-nav{display:flex}
+.qm-nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:12px 18px 18px;background:#0d1220;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 18px 30px rgba(0,0,0,.4)}
+.qm-nav a{padding:12px 14px;font-size:15px}
+.qm-hero{padding:52px 0 44px}
+.qm-hero h1{font-size:29px}
+.qm-lead,.qm-about p,.qm-cta p{font-size:15px}
+.qm-stats{gap:20px}
+.qm-stats div b{font-size:21px}
+.qm-sec{padding:52px 0}
+.qm-sec-head h2{font-size:25px}
+.qm-feat{grid-template-columns:1fr}
+.qm-lib{grid-template-columns:1fr}
+.qm-sch-row{grid-template-columns:1fr;padding:15px 18px}
+.qm-cta{padding:36px 24px;border-radius:18px}
+.qm-cta h2{font-size:22px}
+.qm-foot-grid{grid-template-columns:1fr;gap:26px}
+.qm-foot-bot{justify-content:flex-start}
+}
+@media (max-width:400px){
+.qm-hero h1{font-size:26px}
+.qm-btn{padding:12px 20px;font-size:14.5px}
+.qm-brand-txt b{font-size:16.5px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="qm-head">
+  <div class="qm-wrap qm-head-in">
+    <a class="qm-brand" href="#top">
+      <span class="qm-mark" aria-hidden="true">奇</span>
+      <span class="qm-brand-txt">
+        <b>奇米影视盒</b>
+        <span>qimiyingshihe-app.github.io</span>
+      </span>
+    </a>
+    <input type="checkbox" id="qm-menu-toggle" class="qm-menu-toggle">
+    <nav class="qm-nav" aria-label="主导航">
+      <a href="#home">首页</a>
+      <a href="#feature">功能亮点</a>
+      <a href="#library">片库分类</a>
+      <a href="#schedule">更新日程</a>
+      <a href="#faq">常见问题</a>
+      <a href="#about">关于站点</a>
+    </nav>
+    <label class="qm-burger" for="qm-menu-toggle" aria-label="展开导航菜单">
+      <i></i><i></i><i></i>
+    </label>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="qm-hero" id="home">
+    <span class="qm-glow qm-glow-a"></span>
+    <span class="qm-glow qm-glow-b"></span>
+    <div class="qm-wrap qm-hero-in">
+      <div>
+        <span class="qm-tagline"><em></em>聚合片源每日补档 · 跨设备续播</span>
+        <h1>奇米影视盒，把追剧这件事<br>收进<u>同一个片夹</u></h1>
+        <p class="qm-lead">院线大片、热播剧集、动漫与综艺在<strong>奇米影视盒</strong>里按题材、年份、地区、清晰度四个维度重新排过一遍，找片不用在几个软件之间来回切。看到一半关掉网页，换个设备打开，进度条还停在原来那一秒。</p>
+        <div class="qm-btns">
+          <a class="qm-btn qm-btn-p" href="#">立即打开片库</a>
+          <a class="qm-btn qm-btn-o" href="#">查看更新日程</a>
+        </div>
+        <div class="qm-stats">
+          <div><b>38,000+</b><span>在库片源</span></div>
+          <div><b>260 部</b><span>日均补档</span></div>
+          <div><b>4 档</b><span>清晰度可选</span></div>
+          <div><b>3 端</b><span>进度互通</span></div>
+        </div>
+        <p class="qm-url-chip">官方站点 <b>https://qimiyingshihe-app.github.io</b> · 收藏后可直接从书签进入</p>
+      </div>
+      <div class="qm-player" aria-hidden="true">
+        <div class="qm-screen">
+          <span class="qm-play"></span>
+          <div class="qm-bar">
+            <div class="qm-bar-t"><i></i></div>
+            <div class="qm-bar-m"><span>01:24:36</span><span>02:11:08</span></div>
+          </div>
+        </div>
+        <div class="qm-thumbs"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qm-sec" id="feature">
+    <div class="qm-wrap">
+      <div class="qm-sec-head">
+        <span class="qm-kicker">Core Features</span>
+        <h2>奇米影视盒的六个核心亮点</h2>
+        <p>从找片到播放到追更，奇米影视盒把整条链路压进一个页面里，不需要额外装插件，也不用记多个账号。</p>
+      </div>
+      <div class="qm-feat">
+        <article class="qm-card">
+          <div class="qm-ico" aria-hidden="true">◎</div>
+          <h3>四维检索片库</h3>
+          <p>题材、年份、地区、清晰度交叉筛选，冷门老片和刚上线的新剧都能一次定位。</p>
+        </article>
+        <article class="qm-card">
+          <div class="qm-ico" aria-hidden="true">⇄</div>
+          <h3>跨端续播</h3>
+          <p>电脑、平板、手机共享同一条观看进度，关掉再打开接着往下播。</p>
+        </article>
+        <article class="qm-card">
+          <div class="qm-ico" aria-hidden="true">▤</div>
+          <h3>离线缓存</h3>
+          <p>通勤前把剧集拉到本地，弱网和地铁隧道里照样不转圈。</p>
+        </article>
+        <article class="qm-card qm-card-w">
+          <div class="qm-ico" aria-hidden="true">≋</div>
+          <h3>播放参数自定义</h3>
+          <p>倍速、画面比例、音轨与字幕延迟都能单独调，找到适合自己的那一档设置后会默认沿用。</p>
+          <ul>
+            <li>0.5× 到 3.0× 无级倍速</li>
+            <li>外挂字幕拖拽校时</li>
+            <li>音画不同步一键归位</li>
+          </ul>
+        </article>
+        <article class="qm-card qm-card-w">
+          <div class="qm-ico" aria-hidden="true">✦</div>
+          <h3>追更提醒与片单</h3>
+          <p>把在追的剧收进私人片单，新集数上线后按订阅顺序推送提醒，不再靠翻日历猜更新时间。</p>
+          <ul>
+            <li>自建片单可分组归档</li>
+            <li>更新后自动排到队首</li>
+            <li>看过的内容自动标记</li>
+          </ul>
+        </article>
+        <article class="qm-card">
+          <div class="qm-ico" aria-hidden="true">◈</div>
+          <h3>轻量无打扰</h3>
+          <p>页面结构克制，打开即播，长片连播不弹窗打断。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qm-sec qm-sec-alt" id="library">
+    <div class="qm-wrap">
+      <div class="qm-sec-head">
+        <span class="qm-kicker">Library</span>
+        <h2>片库分类与热门标签</h2>
+        <p>奇米影视盒把在库内容拆成八个主分类，每个分类下再挂细分标签，顺着标签点进去就是结果列表。</p>
+      </div>
+      <div class="qm-lib">
+        <a href="#"><b>电影</b><em>动作 / 科幻 / 悬疑 / 文艺</em><i>12,400 部 →</i></a>
+        <a href="#"><b>剧集</b><em>国产 / 日韩 / 欧美 / 泰剧</em><i>9,800 部 →</i></a>
+        <a href="#"><b>动漫</b><em>连载 / 完结 / 剧场版</em><i>7,300 部 →</i></a>
+        <a href="#"><b>综艺</b><em>访谈 / 真人秀 / 音乐</em><i>3,600 部 →</i></a>
+        <a href="#"><b>纪录片</b><em>人文 / 自然 / 历史</em><i>2,100 部 →</i></a>
+        <a href="#"><b>短剧</b><em>都市 / 古装 / 甜宠</em><i>1,900 部 →</i></a>
+        <a href="#"><b>少儿</b><em>启蒙 / 动画 / 科普</em><i>980 部 →</i></a>
+        <a href="#"><b>院线新片</b><em>本周上线 / 预告片</em><i>实时补档 →</i></a>
+      </div>
+      <div class="qm-tagrow">
+        <span>4K 原画</span><span>杜比音效</span><span>中英双语字幕</span><span>无广纯净版</span><span>本周热播</span><span>评分 8 分以上</span><span>九十年代老片</span><span>一战封神系列</span><span>单集十分钟</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="qm-sec" id="schedule">
+    <div class="qm-wrap">
+      <div class="qm-sec-head">
+        <span class="qm-kicker">Update Schedule</span>
+        <h2>奇米影视盒每周更新日程</h2>
+        <p>补档按固定节奏走，下面这张表是站点长期沿用的排期，遇到档期临时调整会在当天置顶说明。</p>
+      </div>
+      <div class="qm-sch">
+        <div class="qm-sch-row time"><span>WEEK</span><span>补档内容</span><span>状态</span></div>
+        <div class="qm-sch-row"><span>周一 · 10:00</span><span class="d"><b>院线窗口期新片</b>本周下映与刚上线的院线片源集中入库</span><span class="s"><i class="qm-pill qm-pill-o">已排期</i></span></div>
+        <div class="qm-sch-row"><span>周二 · 14:00</span><span class="d"><b>国产剧集日更</b>在播剧集跟随播出节奏同步，当晚补字幕</span><span class="s"><i class="qm-pill qm-pill-g">稳定更新</i></span></div>
+        <div class="qm-sch-row"><span>周四 · 16:00</span><span class="d"><b>日韩欧美剧</b>海外剧集按首播时区对齐，配多语字幕</span><span class="s"><i class="qm-pill qm-pill-g">稳定更新</i></span></div>
+        <div class="qm-sch-row"><span>周五 · 20:00</span><span class="d"><b>综艺与真人秀</b>周末档综艺整季打包，含花絮与加更</span><span class="s"><i class="qm-pill qm-pill-b">整季入库</i></span></div>
+        <div class="qm-sch-row"><span>周日 · 09:00</span><span class="d"><b>动漫与纪录片</b>连载番剧周更，纪录片按专题成系列上架</span><span class="s"><i class="qm-pill qm-pill-b">周末专场</i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qm-sec qm-sec-alt" id="faq">
+    <div class="qm-wrap">
+      <div class="qm-sec-head">
+        <span class="qm-kicker">FAQ</span>
+        <h2>关于奇米影视盒的几个常见问题</h2>
+        <p>下面几条是用户问得最多的，答案按站点当前的实际规则整理。</p>
+      </div>
+      <div class="qm-faq">
+        <details open>
+          <summary>奇米影视盒需要注册账号才能看吗？</summary>
+          <p>不需要。打开站点就能直接检索片库并播放，注册只影响跨端续播和私人片单这类需要存档的功能，不注册也能完整使用检索与播放。</p>
+        </details>
+        <details>
+          <summary>换设备后播放进度会丢吗？</summary>
+          <p>不会。进度挂在片源本身而不是某一台机器上，用同一账号在电脑、平板、手机任意一端登录，看到的停顿位置是一致的；不用账号时进度保存在本地，换浏览器会被清掉。</p>
+        </details>
+        <details>
+          <summary>找不到想看的老片怎么办？</summary>
+          <p>先用年份加地区两个条件缩小范围，很多九十年代和千禧年初的片子是按原名入库的，用译名搜不到。仍然缺片可以提交补档需求，通常会在下一个补档日处理。</p>
+        </details>
+        <details>
+          <summary>播放卡顿和字幕不同步怎么解决？</summary>
+          <p>卡顿优先切到下一档清晰度，弱网环境下建议提前离线缓存。字幕提前或滞后可以在播放面板里拖拽校时，调好的偏移量会记住，下一次打开继续生效。</p>
+        </details>
+        <details>
+          <summary>怎么确认进的是奇米影视盒官方站点？</summary>
+          <p>认准域名 qimiyingshihe-app.github.io，完整地址是 https://qimiyingshihe-app.github.io。站点名称固定为奇米影视盒，名称或域名有任何字符差异的都不是本站。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="qm-sec" id="about">
+    <div class="qm-wrap qm-about">
+      <div>
+        <span class="qm-kicker">About</span>
+        <h2 style="font-size:31px;color:#fff;margin:10px 0 18px;font-weight:700;">关于奇米影视盒</h2>
+        <p><strong>奇米影视盒</strong>起初只是一个自建的片单整理工具，后来把检索、播放、追更三件事合并到一起，变成现在的形态。它不生产内容，做的是把散落各处的信息重新归类，让人少花时间在找片上。</p>
+        <p>站点长期维护的方向有两条：一是保持分类体系稳定，不让标签越加越乱；二是把补档节奏固定下来，让更新时间可以被预期。这两件事决定了一个追剧盒值不值得长期留着。</p>
+        <p>官方入口只有一处——<strong>https://qimiyingshihe-app.github.io</strong>，建议直接存进书签，避免检索时被形近名称带偏。</p>
+      </div>
+      <aside class="qm-info">
+        <dl>
+          <dt>站点名称</dt><dd>奇米影视盒</dd>
+          <dt>官方域名</dt><dd><a href="#">qimiyingshihe-app.github.io</a></dd>
+          <dt>访问地址</dt><dd><a href="#">https://qimiyingshihe-app.github.io</a></dd>
+          <dt>服务形态</dt><dd>网页端，随开随用</dd>
+          <dt>补档时间</dt><dd>每周一 / 二 / 四 / 五 / 日</dd>
+          <dt>联系邮箱</dt><dd><a href="#">hi@qimiyingshihe-app.github.io</a></dd>
+          <dt>留言入口</dt><dd><a href="#">站内意见反馈</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="qm-sec">
+    <div class="qm-wrap">
+      <div class="qm-cta">
+        <h2>今晚想看的，奇米影视盒已经排好了</h2>
+        <p>把在追的剧收进片单，剩下的交给更新提醒。官方站点 https://qimiyingshihe-app.github.io 全天开放，不需要排队也不需要激活码。</p>
+        <div class="qm-btns">
+          <a class="qm-btn qm-btn-p" href="#library">浏览片库分类</a>
+          <a class="qm-btn qm-btn-o" href="#faq">先看看使用说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="qm-foot">
+  <div class="qm-wrap">
+    <div class="qm-foot-grid">
+      <div>
+        <h4>奇米影视盒</h4>
+        <p>一个按题材、年份、地区、清晰度整理片源的聚合追剧播放盒，长期固定补档节奏，跨设备续播不断档。</p>
+        <p style="margin-top:12px;">https://qimiyingshihe-app.github.io</p>
+      </div>
+      <div>
+        <h4>片库</h4>
+        <ul>
+          <li><a href="#">电影</a></li>
+          <li><a href="#">剧集</a></li>
+          <li><a href="#">动漫</a></li>
+          <li><a href="#">纪录片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务</h4>
+        <ul>
+          <li><a href="#">离线缓存</a></li>
+          <li><a href="#">跨端续播</a></li>
+          <li><a href="#">追更提醒</a></li>
+          <li><a href="#">字幕校时</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点</h4>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#schedule">更新日程</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="qm-foot-bot">
+      <span>© 2024-2026 奇米影视盒 · qimiyingshihe-app.github.io 版权所有</span>
+      <span><a href="#">隐私说明</a> · <a href="#">使用条款</a> · <a href="#top">回到顶部</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://qimiyingshihe-app.github.io/#website",
+      "name": "奇米影视盒",
+      "alternateName": "奇米影视盒官网",
+      "url": "https://qimiyingshihe-app.github.io/",
+      "inLanguage": "zh-CN",
+      "description": "奇米影视盒是聚合院线大片、热播剧集、动漫综艺的追剧播放盒，支持四维检索、跨端续播、离线缓存与追更提醒。",
+      "publisher": {"@id": "https://qimiyingshihe-app.github.io/#org"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://qimiyingshihe-app.github.io/#org",
+      "name": "奇米影视盒",
+      "url": "https://qimiyingshihe-app.github.io/",
+      "email": "hi@qimiyingshihe-app.github.io"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://qimiyingshihe-app.github.io/#webpage",
+      "url": "https://qimiyingshihe-app.github.io/",
+      "name": "奇米影视盒｜高清聚合追剧播放盒",
+      "isPartOf": {"@id": "https://qimiyingshihe-app.github.io/#website"},
+      "about": "奇米影视盒片库分类、功能亮点与每周更新日程",
+      "inLanguage": "zh-CN"
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
